@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
 
-const Main = ({ children }) => {
+const Main = ({ children, router }) => {
     return (
         <Box as="main" pb={8}>
             <Head>
@@ -9,7 +9,7 @@ const Main = ({ children }) => {
                 <title>delphinium - homepage</title>
             </Head>
 
-            <Container maxW="container.md">
+            <Container maxW="container.md" pt={14}>
                 {children}
             </Container>
         </Box>
